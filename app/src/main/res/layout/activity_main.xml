@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
     tools:context="com.example.user.wordcounter.MainActivity">
 
     <EditText
@@ -13,9 +14,14 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="108dp"
+        android:autoText="false"
+        android:background="@android:color/background_light"
         android:ems="10"
+        android:fontFamily="@font/catamaran_medium"
         android:inputType="textPersonName"
         android:text="@string/enter_text"
+        android:textAlignment="center"
+        android:textIsSelectable="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,11 +29,13 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="169dp"
         android:layout_height="57dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="36dp"
+        android:background="?attr/colorButtonNormal"
+        android:fontFamily="@font/catamaran_medium"
         android:onClick="onButtonClick"
         android:text="@string/button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,11 +44,15 @@
 
     <TextView
         android:id="@+id/display_word_count"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="60dp"
+        android:fontFamily="@font/catamaran_medium"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
