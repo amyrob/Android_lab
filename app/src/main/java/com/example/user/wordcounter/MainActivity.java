@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d("MainActivity", "Button clicked");
         String phraseEntered = enterText.getText().toString();
         Log.d("MainActivity", phraseEntered);
-        WordCounter wordCounter = new WordCounter();
-        phraseTextView.setText(wordCounter.breakDownPhrase(phraseEntered));
+        Integer count = WordCounter.breakDownPhrase(phraseEntered);
+        phraseTextView.setText("The word count is " + count);
     }
 }
