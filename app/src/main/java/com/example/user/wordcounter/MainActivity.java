@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.d("MainActivity", "oncreate");
         enterText = findViewById(R.id.enter_text);
-        submitButton = findViewById(R.id.button);
+        submitButton = findViewById(R.id.get_word_count_button);
         phraseTextView = findViewById(R.id.display_word_count);
     }
 
